@@ -68,17 +68,17 @@ The Classical Approach:
 ![Alt text](assets/multiplicativedecomposition.png)
 
 #### Additive Decomposition
-![alt text](additivedecomposition.png)
+![alt text](assets/additivedecomposition.png)
 
 ### Autocorrelation
 
 *Checking the correlation of time series data with the lagged version of the same data to figure out seasonality.*
-![alt text](autocorrelation.png)
+![alt text](assets/autocorrelation.png)
 
 ### Partial Autocorrelation
 
 *Partial autocorrelation is the correlation of time series at two different lags ignoring the intermediate lags. ACF is more useful as it helps in determining seasonality, trends( if it needs differencing). PACF can help us determine auto regressive components.*
-![alt text](partialautocorrelation.png)
+![alt text](assets/partialautocorrelation.png)
 
 ## Forecasting Techniques
 *In this section, I will be experimenting with Holt-Winters Model, ARIMA and SARIMA, to see which fits the best.*
@@ -99,6 +99,6 @@ The Classical Approach:
 ![alt text](assets/sarima.png)
 
 #### Residual Analysis
-![alt text](sarimaresiduals.png)
+![alt text](assets/sarimaresiduals.png)
 
 *For this data SARIMA seems to be working best. A few other methods that I did not try but would recommend for time series analysis are : TBATS, LSTMS and Fourier Series and Harmonic Regression.*
