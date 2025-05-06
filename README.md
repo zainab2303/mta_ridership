@@ -5,6 +5,7 @@
 ## Ridership Statistics
 
 #### Hourly average of all the subway stations: 
+![Alt text]("assets/all_hourly_ridership.png")
 
 #### Daily average of all the subway stations:
 
@@ -22,11 +23,11 @@ To reduce the chances of errors, we take the data after feb 24, 2022*
 
 ### Stationarity:
 
-*A stationary time series has a constant mean and variance through time. Before using ARIMA we must check for a stationary time series.The time series we are using is clearly not stationary, the average number of people are increasing over time. The data also very clearly has seasonal trends, between weekdays and weekends. The variance is also not constant as over time the maximum and minimum are changing.
+*A stationary time series has a constant mean and variance through time. Before using ARIMA we must check for a stationary time series.The time series we are using is clearly not stationary, the average number of people are increasing over time. The data also very clearly has seasonal trends, between weekdays and weekends. The variance is also not constant as over time the maximum and minimum are changing.*
 How to make a time series stationary ?
 1. Making the mean constant
 2. Making the variance constant
-One way to make the variance stationary is by log transform: This assumes that the  data follows an exponential trend.*
+One way to make the variance stationary is by log transform: This assumes that the  data follows an exponential trend.
 
 *The variance seems constant now but the mean is not : The most common way to make the mean constant is differencing, That is where the difference at the time t between the series at time y(t) and y(t-1)
 Stabilize the variance before stabilizing the mean.*
@@ -39,7 +40,7 @@ Stabilize the variance before stabilizing the mean.*
 
 ### Time Series Decomposition
 
-*A Time Series is composed of three main elements : Trend, Seasonality and Residual/Remainder
+*A Time Series is composed of three main elements : Trend, Seasonality and Residual/Remainder*
 Additive Model :
 Y = T + S + R
 Multiplicative Model :
@@ -47,12 +48,12 @@ Y = T * S * R
 We can also write it as :
 ln(Y) = ln(T) + ln (S) + ln(R)
 
-In an additive model the function of time series is either decreasing or increasing by a constant. In a multiplicative model the function is increasing or decreasing by a variable 
+*In an additive model the function of time series is either decreasing or increasing by a constant. In a multiplicative model the function is increasing or decreasing by a variable* 
 The Classical Approach:
 1. Compute the trend component
 2. De-trend the series Y - T and Y/T
 3. Compute the seasonal component S
-4. Compute the residual component R*
+4. Compute the residual component R
 #### Multiplicative Decomposition
 #### Additive Decomposition
 ### Autocorrelation
@@ -66,16 +67,16 @@ The Classical Approach:
 ## Forecasting Techniques
 *In this section, I will be experimenting with Holt-Winters Model, ARIMA and SARIMA, to see which fits the best.*
 
-Holt-Winters Model
+### Holt-Winters Model
 
-Residual Analysis
+#### Residual Analysis
 
-ARIMA
+### ARIMA
 
-Residual Analysis
+#### Residual Analysis
 
-SARIMA
+### SARIMA
 
-Residual Analysis
+#### Residual Analysis
 
 *For this data SARIMA seems to be working best. A few other methods that I did not try but would recommend for time series analysis are : TBATS, LSTMS and Fourier Series and Harmonic Regression.*
