@@ -5,7 +5,7 @@
 ## Ridership Statistics
 
 #### Hourly average of all the subway stations: 
-![Alt text]("assets/all_hourly_ridership.png")
+![Alt text](assets/all_hourly_ridership.png)
 
 #### Daily average of all the subway stations:
 
